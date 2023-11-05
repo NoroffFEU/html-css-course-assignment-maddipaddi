@@ -1,0 +1,14 @@
+/* Use this file to store your useful variables */
+/* This could be colors, fonts, or padding sizes! */
+
+:root {
+  --color-primary: #fff;
+  --color-secondary: #021E2E;
+  --color-tertiary: #021B29; 
+  --color-accent: #F19115;
+  --color-accent-variation: #414B24;
+  --font-size-primary: 1rem;
+  --margin-primary: 1rem;
+  --drop-shadow-primary: 1px 7px 8px 0px #011520; 
+  --drop-shadow-accent: 1px 3px 1px 1px #011520;
+}

@@ -1,19 +1,58 @@
 /* Use import to split up your CSS into manageable chunks */
-@import url("./_reset.css");
+@import url("./reset.css");
 /* Files that are only needed to be imported are called partials */
 /* These are marked with an underscore: */
-@import url("./_variables.css");
+@import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
+@import url(./header.css);
+@import url(./movie-slider.css);
+@import url(./selling-points.css);
+@import url(./buttons.css);
+@import url(./featured.css);
+@import url(./footer.css);
+@import url(./movies-page.css);
+@import url(./about-us.css);
+@import url(./font.css);
+@import url(./input-fields.css);
+@import url(./media-queries.css);
 
 body {
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--color-primary);
   background-color: var(--color-secondary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.centered {
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.flex-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-tertiary);
+  box-shadow: var(--drop-shadow-primary);
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  flex: 1 1;
+}
+
+h2 {
   display: flex;
   justify-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
 }
